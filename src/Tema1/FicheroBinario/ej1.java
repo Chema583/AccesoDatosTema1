@@ -15,7 +15,7 @@ public class ej1 {
         while (true) {
             //Pintamos el menú;
             System.out.println("Pulsa 1 para crear un fichero binario");
-            System.out.println("Pulsa 2 para crear un fichero binario");
+            System.out.println("Pulsa 2 para leer un fichero binario");
             System.out.println("Pulsa 3 para salir del programa");
 
             int opcion = sc.nextInt();
