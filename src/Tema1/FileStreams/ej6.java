@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class ej6 {
 
     public static void main(String[] args) {
-        String nombreFichero = "numeros.txt";  // Nombre del fichero a leer
+        String nombreFichero = "Tema1/FileStreams/numeros.txt";  // Nombre del fichero a leer
         int sumaTotal = 0;  // Variable para acumular la suma de los números
 
         try {

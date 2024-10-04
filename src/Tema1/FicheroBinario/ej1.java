@@ -24,7 +24,7 @@ public class ej1 {
 
                 case 1:
                     //pasamos los datos pedidos en el enunciado del ejercicio;
-                    System.out.print("Introduce tu nombre");
+                    System.out.println("Introduce tu nombre");
                     String nombre = sc.nextLine();
 
                     System.out.println("Introduce tu edad");

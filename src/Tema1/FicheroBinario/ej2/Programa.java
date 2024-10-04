@@ -40,19 +40,17 @@ public class Programa {
 
         } while (numeroSuspensos < 0 || numeroSuspensos > 4);
 
-        boolean residenciaFamiliar;
-        String respuesta;
-        do {
-            System.out.print("¿Tiene residencia familiar? (Sí/No): ");
-            respuesta = scanner.next().toUpperCase();
-        } while (!respuesta.equals("SI") && !respuesta.equals("NO"));
-        residenciaFamiliar = respuesta.equals("SI");
+        String residenciaFamiliar;
+        System.out.print("¿Tiene residencia familiar? (Sí/No): ");
+        residenciaFamiliar = scanner.nextLine();
+
+        scanner.nextLine();
 
         System.out.print("Introduce los ingresos anuales de la familia: ");
         double ingresosAnuales = scanner.nextDouble();
 
         // Crear un objeto Becario con los datos proporcionados
-        Becario becario = new Becario(nombreApellido, sexo, edad, numeroSuspensos, residenciaFamiliar, ingresosAnuales);
+        Becario becario = new Becario(nombreApellido, edad,sexo, numeroSuspensos, residenciaFamiliar, ingresosAnuales);
 
         // Guardar los datos del becario en un archivo binario
         guardarBecarioEnArchivo(becario);
